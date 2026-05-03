@@ -1,4 +1,7 @@
 # TpAngular
+Grupo: 
+Miguel Tomas Quiroga
+Luciana Milagro Vedia.
 
 Grupo: 
 Miguel Tomas Quiroga
