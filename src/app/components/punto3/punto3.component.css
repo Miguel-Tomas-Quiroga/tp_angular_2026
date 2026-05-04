@@ -1,0 +1,37 @@
+.card-memory {
+  perspective: 1000px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+
+.card-memory.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* Evitar que las cartas "tiemblen" al voltear */
+.card-memory:active .card-inner {
+  transform: scale(0.95);
+  transition: 0.1s;
+}

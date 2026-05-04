@@ -9,12 +9,12 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./punto1.component.css']
 })
 export class Punto1Component {
-  // Fuente de datos según consigna
+  
   eventos = [
     { 
-      nombre: 'Material Design', 
-      descripcion: 'Designer Matías Duarte explained that "unlike real paper, our digital material can expand and reform intelligently".', 
-      img: 'https://picsum.photos/id/20/1200/500' 
+      nombre: 'Locrada Patria', 
+      descripcion: 'Este 25 de mayo, celebra la independencia con música en vivo, comida tradicional y actividades para toda la familia.', 
+      img: 'assets/img/locrada.webp' 
     },
     { 
       nombre: 'Taller de Yoga', 
