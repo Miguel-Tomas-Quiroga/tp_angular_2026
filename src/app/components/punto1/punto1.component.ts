@@ -14,7 +14,7 @@ export class Punto1Component {
     { 
       nombre: 'Locrada Patria', 
       descripcion: 'Este 25 de mayo, celebra la independencia con música en vivo, comida tradicional y actividades para toda la familia.', 
-      img: 'assets/img/locrada.webp' 
+       img: '/assets/locrada.webp'
     },
     { 
       nombre: 'Taller de Yoga', 
@@ -27,6 +27,7 @@ export class Punto1Component {
       img: 'https://picsum.photos/id/0/1200/500' 
     }
   ];
+  
 
   indice: number = 0;
 
@@ -38,6 +39,7 @@ export class Punto1Component {
       this.indice = 0; // Vuelve al inicio
     }
   }
+  
 
   // Método para retrasar
   anterior() {
@@ -47,4 +49,5 @@ export class Punto1Component {
       this.indice = this.eventos.length - 1; // Va al último
     }
   }
+  
 }
