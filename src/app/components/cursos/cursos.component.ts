@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { InscripcionService } from './inscripcion.service'; // Asegúrate de crear este servicio
+import { InscripcionService } from './inscripcion.service';
 
 @Component({
   selector: 'app-cursos',
@@ -11,11 +11,11 @@ import { InscripcionService } from './inscripcion.service'; // Asegúrate de cre
   styleUrl: './cursos.component.css'
 })
 export class CursosComponent {
-  // Objeto que sigue la estructura Inscripcion {dni, precio, categoria, etc} [cite: 57]
+  // Objeto que sigue la estructura Inscripcion
   nuevaInscripcion = {
     dni: '',
     precio: 0,
-    categoriaAlumno: '', // 1=Estudiante, 2=Egresado, 3=Particular [cite: 58]
+    categoriaAlumno: '', // 1=Estudiante, 2=Egresado, 3=Particular
     fechaInscripcion: '',
     email: '',
     curso: '',
@@ -24,11 +24,11 @@ export class CursosComponent {
 
   constructor(public inscripcionService: InscripcionService) {}
 
-  // Evento (change) para calcular el descuento [cite: 61]
+  // Evento (change) para calcular el descuento
   calcularTotal() {
     let descuento = 0;
-    if (this.nuevaInscripcion.categoriaAlumno === '1') descuento = 0.35; // 35% descuento [cite: 60]
-    if (this.nuevaInscripcion.categoriaAlumno === '2') descuento = 0.50; // 50% descuento [cite: 60]
+    if (this.nuevaInscripcion.categoriaAlumno === '1') descuento = 0.35; // 35% descuento
+    if (this.nuevaInscripcion.categoriaAlumno === '2') descuento = 0.50; // 50% descuento
     
     this.nuevaInscripcion.precioFinal = this.nuevaInscripcion.precio * (1 - descuento);
   }

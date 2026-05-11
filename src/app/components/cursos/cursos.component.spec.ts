@@ -7,7 +7,6 @@ describe('CursosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      // Aquí se importaría el componente y quizá el servicio
       imports: [CursosComponent]
     }).compileComponents();
 
