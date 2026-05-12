@@ -2,6 +2,7 @@
 Grupo: 
 Miguel Tomas Quiroga
 Luciana Milagro Vedia.
+Patricio Luis Romero 
 
 Grupo: 
 Miguel Tomas Quiroga
